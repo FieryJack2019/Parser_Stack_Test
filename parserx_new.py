@@ -118,6 +118,7 @@ def get_data(times):
                         count_upvotes_tag, 
                         count_view_tag, 
                         count_questions_owner_reputation_300])
+    data_base.get_all_data()
 
 
 def sql_data_save(data):
@@ -127,4 +128,4 @@ def sql_data_save(data):
     data_base.update_data(data_special)
 
 
-get_data([1598918400, 1599004800])
+get_data([1599004800, 1601510400])

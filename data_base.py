@@ -75,7 +75,7 @@ def get_all_data():
         except:
             pass
 
-    name_file = f'excel_main/stackoverflow_{randint(0, 99999999)}.xlsx'
+    name_file = f'stackoverflow_{randint(0, 99999999)}.xlsx'
     wb.save(name_file)
     return name_file
 
