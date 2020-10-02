@@ -28,7 +28,7 @@ def get_data(times):
     key = "21IxDPqUnDcVv5yn0xdZ)w(("
 
     while True:
-        sleep(1)
+        sleep(2)
         try:
             questions_data = loads(get(api + f"questions?page={page}&fromdate={times[0]}&todate={times[1]}&order=desc&sort=activity&site=stackoverflow&key={key}").text)
             try:
@@ -75,7 +75,7 @@ def get_data(times):
                     pass
                 
                 if tag not in related_tags.keys():
-                    sleep(1)
+                    sleep(3)
                     while True:
                         try:
                             tag_related = loads(get(api + f"tags/{tag}/related?site=stackoverflow&key={key}").text)
